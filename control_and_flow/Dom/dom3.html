@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color:brown;color: pink;">
+    <ul class="javascript">
+        <li> I am learing Javascript </li>
+    </ul>
+</body>
+<script>
+    function addlanguage(langName){
+        // we made this function so we don't need to do these below step again and again
+        const lil = document.createElement('li');
+        lil.innerHTML = `${langName}`
+        document.querySelector('.javascript').appendChild(lil)
+    }
+     addlanguage("Java")
+     addlanguage("php")
+
+     function addcar(carName){   // 
+        const brand = document.createElement('li')
+        brand.innerHTML = `${carName}`
+        document.querySelector('.javascript').appendChild(brand)
+     }
+     addcar("ferrari")
+     addcar("Bucati")
+
+     // now we will write above code in optimise way 
+     function addbike(bikeName){
+        const brand = document.createElement('li')
+      brand.appendChild(document.createTextNode(bikeName)) // this is the optimise lines 
+      document.querySelector('.javascript').appendChild(brand)
+     }
+     addbike("Hayabhusa")
+     addbike("BMW")
+
+     function addbus (busName){
+        const bus = document.createElement("li")
+        bus.appendChild(document.createTextNode(busName))
+        document.querySelector('.javascript').appendChild(bus)
+     }
+     addbus("DTC")
+     addbus("haryana Road ways")
+
+     // now we will edit the elements 
+     const edit = document.querySelector('li:nth-child(7)') // here we selecting which element we want to change
+     const newli = document.createElement('li') // here we are creating new li
+     newli.textContent ="I am changed" // here we are mentioning what we want to change 
+     edit.replaceWith(newli) // we are replacing new with old element 
+
+     const nEdit = document.querySelector('li:nth-child(9)')
+     const newN = document.createElement('li')
+     newN.textContent= "I am second chnage"
+     nEdit.replaceWith(newN)
+
+     const editNew = document.querySelector("li:last-child")
+     editNew.outerHTML = '<li>I am new</li>'
+
+     // Now we will se how to remove elements 
+       const removeEL = document.querySelector("li:last-child") // in query selector we are passing with child we want to remove 
+        removeEL.remove()
+</script>
+</html>

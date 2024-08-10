@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM part 2 </title>
+</head>
+<body style="background-color: black;color: wheat;">
+    <div class="parent">
+        <div>Janurary</div>
+        <div>Auagust</div>
+        <div>July </div>
+        <div>Dec</div>
+    </div>
+</body>
+<script>
+    //const parent = document.querySelector('.parent')
+    // console.log(parent) // it will all elements of div  class
+    // console.log(parent.children) // output HTMLCollection(4) [div, div, div, div]
+    // console.log(parent.children[1].innerHTML); // output August
+
+    // for(let i = 0; i < parent.children.length; i++ ){
+    //    // console.log(parent.children[i].innerHTML) // output Janurary Auagust  July  Dec
+    // }
+    // for(let i =0; i <parent.children.length; i++){
+    //     //console.log(parent.children[i]) // <div>Janurary</div> <div>August</div> <div>July</div> <div>Dec</div>
+    // } 
+
+    // // Styling using parent and children
+    // parent.children[0].style.color = "red"
+    // parent.children[2].style.padding = "10px"
+    // //parent.children[1].style.background-color = "red"
+    // //console.log(parent.firstElementChild) // January
+    // console.log(parent.lastElementChild)  // output Dec
+
+   
+    //console.log('NODES:', parent.childNodes) // output NODES: NodeList(9) [text, div, text, div, text, div, text, div, text]
+    //console.log("NODES:".,children.parentNodes) // wrong cant access 
+    // const  month = document.querySelector('.parent')
+    // console.log(month)
+    // console.log(month.parentElement);//  from this we can access the parent elemets
+    // console.log(month.nextElementSibling); // from this we can access the child next sibling elmement 
+
+    // const div = document.createElement("div") 
+    // // in abvoe line we created vaiable div using  " document.createElement("div") "
+    // console.log(div)
+    // // here we called it  
+    // div.className = "main"
+    // // here we set the class name
+    // div.id = Math.round(Math.random() *20 +1)
+    // // here we set the id 
+    // div.setAttribute('title'," General title")
+    // // here  we are setting attribute title 
+    // div.style.backgroundColor = "pink"
+    // // here we are giving background color
+    // div.style.padding = "10px"
+    // // here we giving padding 
+    // div.style.color = "blue"
+    // // here  we are giving the color to the text
+    
+    // const adTxt = document.createTextNode("I am learing Javascript")
+    // // here we made a variabe and used   document.createTextNode we put the text that we want in div
+    // div.append(adTxt)
+    // // here  we adding the text in div used append
+    // document.body.appendChild(div)
+    // // here we are  connecting to document body show it will be visible on our  page
+
+    /*let head = document.createElement("heading")
+    console.log(head);
+    head.className = "Apni class"
+    head.id = "123"
+    head.setAttribute =('title',"mera title")
+    head.style.backgroundColor = "red"
+    head.style.color ="black"
+    head.style.padding = "5px"
+    head.style.margin = "3px"
+    let txtAd = document.createTextNode("I am here from javascript")
+   head.append(txtAd)
+   document.body.append(head)*/
+
+   // >>>>>>. in this we will edit and remove elements from DOM
+
+   
+</script>
+</html>

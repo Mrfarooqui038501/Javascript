@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body style="background-color: black; color: aqua;">
+    <h2>Beautiful pics</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script> 
+        // EVENTHANDLING 
+    /* // here in this code are adding click event on images using id and addeventlistener and this good approach 
+    document.getElementById('owl').addEventListener('click',function(){
+        alert('Hey you cliked on owl')
+    })
+
+    document.getElementById('river').addEventListener('click',function(){
+        alert('ooh river will be overflow now')
+        alert('why you clicked me')
+        // if I am adding two alert so both alert will work in sequence
+    }) */
+
+    /*document.getElementById('images').addEventListener('click',function(e){
+        console.log('you have clicked inside the ul')
+    },true) // output you have clicked inside the ul
+    document.getElementById('owl').addEventListener('click',function(e){
+        console.log('you have clicked on owl')
+    },true) // output  first this will be printed -you have clicked on owl , and then this you have clicked inside the ul
+    //in above we have seen the "you have clicked on owl" and after that this "then this you have clicked inside the ul"
+    // beacause of the bubling even in bubling event whatever is in bubling that will printed in case of "False" 
+    // in BUBLING elemetn propogration thigs goes bottom to top 
+    // CAPTURING GOES TOP TO BOTTOM */
+
+   /* //  STOPPROPAGATION --- name.stopPropagation
+    document.getElementById('images').addEventListener('click',function(e){
+        console.log('you have clicked inside the ul')
+     },false)
+    document.getElementById('owl').addEventListener('click',function(e){
+        console.log('you have clicked on owl')
+            e.stopPropagation(); // stopPropagation means this code end here above code console will not be printed in case of false
+     },false) */
+
+      /*// PREVENTDEFAULT - name.preventDefault();
+     document.getElementById('images').addEventListener('click',function(e){
+        console.log('you have clicked inside the ul')
+     },false)
+
+     document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault();// so this prevent to open the link so in google id we mentioned google home page link is it will prevent from opeing that
+        console.log('you cliked on google') // you cliked on google then you have clicked inside the ul
+     you have clicked inside the ul
+     })*/
+
+     /* // STOPPROPAGATION  -- name.stopPropagation
+     document.getElementById('images').addEventListener('click',function(e){
+        console.log('you have clicked inside the ul')
+     },false)
+
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault();
+        e.stopPropagation(); // it will stop bubling and above function console statment will not be printed
+        console.log("Again you clciked on google") // output Again you clciked on google
+    },false) */
+
+    // small project in this we want to remove ul from image when we click on it
+    /*document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.parentNode);
+        let removeIt = e.target.parentNode // here we are targeting the parent node to remove
+        removeIt.remove() //  // and here we are removing the parent node using name.remove()
+    })*/
+
+    /*// in this example we will handle the code spilling of google id when we click on it all get remove so we will stop it
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.parentNode)
+        if(e.target.tagName === 'IMG'){   // here we are checking the condition if target.tagname === img only then it will remove
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+    }) */
+
+    
+
+</script>
+</html>
