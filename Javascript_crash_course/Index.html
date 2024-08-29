@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+      <div class="Bg-black">
+          <h1 id="title" class="heading">DOM learning</h1>
+          <!-- <div class="parent">
+            <div>Monday</div>
+            <div>Tuesday</div>
+            <div>Wednesday</div>
+            <div>Thursday</div>
+
+          </div>
+      </div> -->
+
+          <!-- <ul class="language">
+            <li>Javascript</li>
+          </ul> -->
+</body>
+<script>
+           // here we are  creating a variable  parent to  use it further
+         //const Parent = document.querySelector('.parent')
+        //  console.log(Parent);
+        //  console.log(Parent.children)  // here we are accessing the children 
+        //  console.log(Parent.children[1].innerHTML)  // here we are getting the element innerHTML
+
+        //  for(let i=0;  i<Parent.children.length; i++){   // we are using loop on innerhtml
+        //     console.log(Parent.children[i].innerHTML)
+        //  }
+        // Parent.children[3].style.color = "pink"    // here we are styling the children with there index va
+        // Parent.children[0].style.color = 'yellow'
+        // Parent.children[1].style.color ='purple'
+        // Parent.children[2].style.color ='red'
+        // const dayone = document.querySelector('.day')
+        // console.log(dayone)
+        // console.log(dayone.parentElement) // here we are accessing the parent node using children 
+        // console.log(dayone.nextElementSibling) // here we are accessing the sibling node using children
+        // console.log("Nodes:", Parent.childNodes) // this will give the Parents class all children nodes
+        
+        //    Create ELEMENT IN DOM
+        // const div = document.createElement("div")  // first we create an element and hold  it in variable
+        // console.log(div)
+        // div.className = "head"  // here we give the classname to our element
+        // div.id ="header"   //  here we give the Id to our element
+        // div.innerHTML = "Hey I am learing" // here we are adding the text in our element using innerHTML
+        // div.style.backgroundColor = 'green' // here we adding the styling
+        // div.style.padding = '20px'
+        // document.body.appendChild(div) // here we attach the element to our page(body)
+        // const text = document.createTextNode("  Hey I am learning") // this is  another way to add text to your page
+        // div.appendChild(text)
+
+        // const header = document.createElement('h1')
+        // console.log(header)
+        // header.className="parent"
+        // header.id= "mother"
+        // header.innerHTML ="I am from head"
+        // const addtext = document.createTextNode("    I am heading")
+        // document.body.appendChild(header)
+        // header.appendChild(addtext)
+        // header.style.color = "pink"
+        // header.style.backgroundColor = "blue"
+        // header.style.padding= '40'
+
+    // EDIT and Remove element in dom
+     
+//          function addlang(language){
+//             const li = document.createElement('li')
+//             // li.innerHTML = `${language}`
+//             li.appendChild(document.createTextNode(`${language}`))
+//             document.querySelector('.language').appendChild(li)
+//              }
+//          addlang("JAVA")
+//          addlang("PYTHON")
+
+//  // EDIT ELEMENT
+//      const secondlang =  document.querySelector('li:nth-child(2)')// here we are selecting the tag and child where we want to edit
+//      const newli = document.createElement('li')  // then create new li
+//      newli.textContent = "CSS"   // then give content that we want to show
+//      secondlang.replaceWith(newli) // replace new li with old
+
+//      // Another way edit an element is 
+//       const onelang =  document.querySelector('li:first-child') // here we selected the first child
+//       onelang.outerHTML = '<li>React</li>'  // we can replace text with outerhtml as well 
+ 
+//      const newlang =  document.querySelector("li:nth-child(3)")
+//      const newlil = document.createElement('li')
+//      newlil.textContent = "TYPESCRIPT"
+//      newlang.replaceWith(newlil)
+
+//      // REMOVE
+//       const dlt = document.querySelector('li:nth-child(3)')
+//       dlt.remove()   // using remvoe we can dlt  the child
+
+
+
+        
+</script>
+</html>
