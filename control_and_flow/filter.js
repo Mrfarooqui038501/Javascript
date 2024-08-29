@@ -1,5 +1,6 @@
 // filter syntax name.filter()  it gives true false
 
+
 //const ar = [1,2,3,4,5,6,7,8,9,10]
  
 //let newAr = ar.filter((num) => num >= 5)
